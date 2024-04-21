@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "98bfdc21-5092-4d47-8b17-168c5704ea45",
+		"name": "HojaDeTrabajo4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34123232"
+	},
+	"item": [
+		{
+			"name": "informacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/informacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"informacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cargar_registros_desde_csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ruta_archivo\": \"C:/Users/jerem/Documents/U/progra III/Hoja_de_trabajo_4/prueba.csv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cargar_registros_desde_csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cargar_registros_desde_csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar_registro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/buscar_registro?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"buscar_registro"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertar_registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insertar_registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insertar_registro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
